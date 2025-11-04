@@ -15,49 +15,12 @@ export const RestGridMetadata: ComponentMetadataModel = {
   subCategory: 'Plugins',
   hidden: false,
   properties: [{
-    id: 'selection',
-    name: 'Selection',
-    type: 'row-variable',
+    id: 'input',
+    name: 'Input',
+    type: 'text',
     tootip: '',
     default: '',
-    write: true
-  }, {
-    id: 'data',
-    name: 'Table',
-    type: 'table',
-    tootip: 'The table being used to populate',
-    default: '',
-    main: true
-  }, {
-    id: 'date',
-    name: 'Date',
-    type: 'column',
-    tootip: '',
-    default: ''
-  }, {
-    id: 'label',
-    name: 'Label',
-    type: 'column',
-    tootip: '',
-    default: ''
-  }, {
-    id: 'description',
-    name: 'Description',
-    type: 'column',
-    tootip: '',
-    default: ''
-  }, {
-    id: 'filter',
-    name: 'Filter',
-    type: 'filter',
-    tootip: 'Filter the table rows',
-    default: ''
-  }, {
-    id: 'sort',
-    name: 'Sort',
-    type: 'sort',
-    tootip: 'Sort the table rows',
-    default: ''
+    write: false
   }],
   styles: []
 }
