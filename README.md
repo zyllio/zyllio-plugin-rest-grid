@@ -4,7 +4,7 @@ This Zyllio plugin is a Rest Grid Component implemented using [Angular](https://
 
 # Demonstration
 
-<img src="./snapshots/demo.gif">
+<img src="./snapshots/demo.jpg">
 
 # Development environment
 
