@@ -8,7 +8,7 @@ import { Component, Input, OnInit, ViewEncapsulation, computed, input, output } 
 })
 export class AppComponent implements OnInit {
 
-  label = input.required<string>()
+  label = input<string>('')
 
   input = input.required<string>()
 
