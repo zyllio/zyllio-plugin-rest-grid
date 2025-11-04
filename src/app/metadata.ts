@@ -20,7 +20,8 @@ export const RestGridMetadata: ComponentMetadataModel = {
     type: 'text',
     tootip: '',
     default: '',
-    write: false
+    write: false,
+    main: true
   }],
   styles: []
 }
