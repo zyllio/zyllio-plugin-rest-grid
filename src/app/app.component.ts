@@ -1,4 +1,5 @@
-import { Component, Input, OnInit, ViewEncapsulation, computed, input, output } from '@angular/core';
+import { Component, OnInit, ViewEncapsulation, computed, input, output } from '@angular/core';
+import { ListColumnItemModel } from '@zyllio/zy-sdk';
 
 @Component({
   templateUrl: './app.component.html',
@@ -6,9 +7,9 @@ import { Component, Input, OnInit, ViewEncapsulation, computed, input, output } 
   encapsulation: ViewEncapsulation.ShadowDom,
   imports: []
 })
-export class AppComponent implements OnInit {
+export class AppComponent {
 
-  label = input<string>('')
+  label = input.required<string>()
 
   input = input.required<string>()
 
@@ -23,9 +24,6 @@ export class AppComponent implements OnInit {
 
   clicked = output<void>()
 
-  ngOnInit(): void {
-
-  }
 
   // select(selection: ListColumnItemModel) {
 
