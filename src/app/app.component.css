@@ -6,16 +6,16 @@
     padding: 10px 10px;
     width: 100%;
     height: auto;
+    font-family: var(--theme-font-family, 'Roboto');
+    font-size: var(--font-size);
   }
    
   .content {
     display: flex;
     flex-direction: column;    
-    font-size: var(--font-size);
     width: 100%;
     height: 100%;
-    color: var(--color);
-    font-family: var(--theme-font-family, 'Roboto');
+    color: var(--color);    
     overflow-y: scroll;
     gap: 6px;    
     box-sizing: border-box;
