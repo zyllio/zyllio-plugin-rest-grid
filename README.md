@@ -1,6 +1,6 @@
-# Zyllio Plugin Angular : Timeline
+# Zyllio Plugin Angular : Rest Grid
 
-This Zyllio plugin is a Timeline Component implemented using [Angular](https://angular.io/)
+This Zyllio plugin is a Rest Grid Component implemented using [Angular](https://angular.io/)
 
 # Demonstration
 
@@ -14,7 +14,7 @@ To build this plugin, Node.js 18+ is required
 
 Install this pre-built file to experiment the plugin:
 ```
-https://zyllio.github.io/zyllio-plugin-angular/dist/plugin.js
+https://zyllio.github.io/zyllio-plugin-rest-grid/dist/plugin.js
 ```
 
 # Build
