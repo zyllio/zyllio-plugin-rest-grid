@@ -9,7 +9,15 @@ import { Data } from './rest-data.constants';
 })
 export class AppComponent implements OnInit {
 
-  @Input() input = '' 
+  @Input() input = ''
+  set _input(input: string) {
+
+    console.log("this.input ", input);
+
+    if (this.input) {
+      this.data = JSON.parse(this.input)
+    }
+  }
 
   data: any
 
@@ -17,10 +25,6 @@ export class AppComponent implements OnInit {
 
   ngOnInit(): void {
 
-    console.log("this.input ", this.input);
-
-    this.data = JSON.parse(this.input)
-    
   }
 
   // select(selection: ListColumnItemModel) {
