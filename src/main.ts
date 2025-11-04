@@ -5,7 +5,7 @@ import { RestGridMetadata } from './app/metadata';
 import { provideExperimentalZonelessChangeDetection } from '@angular/core';
 
 const applicationRef = await createApplication({
-  providers: []
+  providers: [provideExperimentalZonelessChangeDetection()]
 })
 
 const component = createCustomElement(AppComponent, { injector: applicationRef.injector })
