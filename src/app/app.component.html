@@ -1,0 +1,34 @@
+@if(data) {
+
+<div class="content">
+
+  <div class="items">
+
+    @for (hit of data.hits; track $index) {
+
+    <div class="item">
+
+      <div class="image" [style.backgroundImage]="'url(' + hit.image_front_url + ')'"></div>
+
+      <div class="texts">
+
+        <div class="label">{{ hit.product_name }} </div>
+
+        <div class="brands">
+
+          @for (brand of hit.brands; track $index) {
+
+          <div class="brand">{{ brand }}</div>
+          }
+
+        </div>
+
+      </div>
+    </div>
+    }
+
+  </div>
+
+</div>
+
+}
