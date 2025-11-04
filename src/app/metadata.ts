@@ -11,17 +11,20 @@ export const RestGridMetadata: ComponentMetadataModel = {
   id: 'plugin-rest-grid',
   icon: Icon,
   label: 'REST Grid',
-  category: 'Components',
-  subCategory: 'Plugins',
+  category: 'Plugins',
   hidden: false,
   properties: [{
     id: 'input',
     name: 'Input',
     type: 'text',
-    tootip: '',
     default: '',
     write: false,
     main: true
+  }, {
+    id: 'label',
+    name: 'Label',
+    type: 'text',
+    default: 'Results'
   }],
   styles: []
 }

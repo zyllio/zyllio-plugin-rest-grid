@@ -1,5 +1,4 @@
-import { Component, Input, OnInit, ViewEncapsulation, input, model, output, signal } from '@angular/core';
-import { Data } from './rest-data.constants';
+import { Component, Input, OnInit, ViewEncapsulation, output } from '@angular/core';
 
 @Component({
   templateUrl: './app.component.html',
