@@ -14,12 +14,11 @@ export class AppComponent implements OnInit {
 
   data = computed<any>(() => {
 
-    return null 
-    // const value = this.input()
+    const value = this.input()
 
-    // if (!value) return null
+    if (!value) return null
 
-    // return JSON.parse(value)
+    return JSON.parse(value)
   })
 
   clicked = output<void>()
