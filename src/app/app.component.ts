@@ -1,4 +1,4 @@
-import { Component, Input, OnInit, ViewEncapsulation, output } from '@angular/core';
+import { Component, Input, OnInit, ViewEncapsulation, computed, input, output } from '@angular/core';
 
 @Component({
   templateUrl: './app.component.html',
@@ -8,19 +8,18 @@ import { Component, Input, OnInit, ViewEncapsulation, output } from '@angular/co
 })
 export class AppComponent implements OnInit {
 
-  @Input() label = ''
+  label = input.required<string>()
 
-  @Input() input = ''
-  set _input(input: string) {
+  input = input.required<string>()
 
-    console.log("this.input ", input);
+  data = computed(() => {
 
-    if (this.input) {
-      this.data = JSON.parse(this.input)
-    }
-  }
+    const value = this.input()
 
-  data: any
+    if (!value) return null
+
+    return JSON.parse(value)
+  })
 
   clicked = output<void>()
 
