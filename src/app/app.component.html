@@ -1,8 +1,8 @@
-@if(data()) {
-
 <div class="content">
 
   <div class="label">{{ label() }}</div>
+
+  @if(data()) {
 
   <div class="items">
 
@@ -30,9 +30,9 @@
     }
 
   </div>
+  
+  } @else {
+  Pas de données
+  }
 
 </div>
-
-} @else {
-Pas de données
-}
