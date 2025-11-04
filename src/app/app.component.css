@@ -21,6 +21,10 @@
     box-sizing: border-box;
   }
 
+  .label {
+    padding: 0 10px;
+  }
+
   .items {
     display: flex;
     flex-direction: column;

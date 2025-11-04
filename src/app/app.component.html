@@ -2,6 +2,8 @@
 
 <div class="content">
 
+  <div class="label">{{label }}</div>
+
   <div class="items">
 
     @for (hit of data.hits; track $index) {
@@ -31,4 +33,6 @@
 
 </div>
 
+} @else {
+  Pas de données 
 }

@@ -8,6 +8,8 @@ import { Component, Input, OnInit, ViewEncapsulation, output } from '@angular/co
 })
 export class AppComponent implements OnInit {
 
+  @Input() label = ''
+
   @Input() input = ''
   set _input(input: string) {
 
