@@ -18,9 +18,8 @@
 
         <div class="brands">
 
-          @for (brand of product.brands; track $index) {
-
-          <div class="brand">{{ brand }}</div>
+          @for (brand of (product.brands.split(',')); track $index) {
+            <div class="brand">{{ brand.trim() }}</div>
           }
 
         </div>
@@ -30,7 +29,7 @@
     }
 
   </div>
-  
+
   } @else {
   Pas de données
   }
