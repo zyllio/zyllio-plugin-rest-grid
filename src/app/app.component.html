@@ -6,19 +6,19 @@
 
   <div class="items">
 
-    @for (hit of data().hits; track $index) {
+    @for (product of data().products; track $index) {
 
     <div class="item">
 
-      <div class="image" [style.backgroundImage]="'url(' + hit.image_front_url + ')'"></div>
+      <div class="image" [style.backgroundImage]="'url(' + product.image_front_url + ')'"></div>
 
       <div class="texts">
 
-        <div class="label">{{ hit.product_name }} </div>
+        <div class="label">{{ product.product_name }} </div>
 
         <div class="brands">
 
-          @for (brand of hit.brands; track $index) {
+          @for (brand of product.brands; track $index) {
 
           <div class="brand">{{ brand }}</div>
           }
